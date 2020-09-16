@@ -28,7 +28,7 @@ const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   uri: 'https://barpass-server.herokuapp.com',
   headers: {
     authorization: localStorage.getItem('token') || '',
-    'client-name': 'Space Explorer [web]',
+    'client-name': 'SpaceX Space Explorer [web]',
     'client-version': '1.0.0',
   },
   typeDefs,

@@ -25,7 +25,7 @@ export const typeDefs = gql`
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   cache,
 //  uri: 'http://localhost:4000/graphql',
-  uri: 'https://barpass-server.herokuapp.com',
+  uri: process.env.HEROKU_GRAPHQL_ENDPOINT,
   headers: {
     authorization: localStorage.getItem('token') || '',
     'client-name': 'SpaceX Space Explorer [web]',
